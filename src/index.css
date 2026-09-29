@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, 'SF Pro Display', system-ui, sans-serif;
+    --font-mono: 'JetBrains Mono', ui-monospace, SFMono-Regular, monospace;
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #07090e;
+    color: #f1f5f9;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none;
+    user-select: none;
+  }
+
+  input, textarea {
+    user-select: text;
+  }
+}
+
+/* iOS Safe Area Utilities */
+.pt-safe {
+  padding-top: max(16px, env(safe-area-inset-top));
+}
+
+.pb-safe {
+  padding-bottom: max(16px, env(safe-area-inset-bottom));
+}
+
+.pb-safe-nav {
+  padding-bottom: calc(max(20px, env(safe-area-inset-bottom)) + 64px);
+}
+
+.font-mono-numbers {
+  font-family: var(--font-mono);
+  font-feature-settings: "tnum" 1;
+}
+
+/* Glassmorphism & Frost effects */
+.frost-card {
+  background: rgba(15, 23, 42, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.frost-nav {
+  background: rgba(8, 11, 18, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* Hide scrollbars for clean iOS aesthetic */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}

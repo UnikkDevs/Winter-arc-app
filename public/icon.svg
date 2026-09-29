@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="100%" stop-color="#030407"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#e0f2fe"/>
+      <stop offset="50%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ffffff"/>
+      <stop offset="100%" stop-color="#94a3b8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background -->
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <rect width="504" height="504" x="4" y="4" rx="108" fill="none" stroke="rgba(56, 189, 248, 0.2)" stroke-width="2"/>
+  
+  <!-- Subtle background grid lines -->
+  <circle cx="256" cy="256" r="180" fill="none" stroke="rgba(255, 255, 255, 0.04)" stroke-width="1.5" stroke-dasharray="4 6"/>
+  <circle cx="256" cy="256" r="120" fill="none" stroke="rgba(56, 189, 248, 0.08)" stroke-width="1.5"/>
+
+  <!-- Geometric Arc & Mountain Peak Iconography -->
+  <!-- Arc -->
+  <path d="M 120 320 A 150 150 0 0 1 392 320" fill="none" stroke="url(#ice)" stroke-width="8" stroke-linecap="round"/>
+  
+  <!-- Main Disciplined Peak -->
+  <polygon points="256,120 336,290 176,290" fill="none" stroke="url(#silver)" stroke-width="12" stroke-linejoin="round"/>
+  <!-- Inner Ice Diamond -->
+  <polygon points="256,160 300,245 212,245" fill="url(#ice)" opacity="0.9"/>
+  <!-- Central Vertical Spine -->
+  <line x1="256" y1="120" x2="256" y2="340" stroke="#ffffff" stroke-width="6" stroke-linecap="round"/>
+  <!-- Horizontal Horizon Cross -->
+  <line x1="160" y1="290" x2="352" y2="290" stroke="rgba(255, 255, 255, 0.5)" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Snowflake subtle sparks -->
+  <circle cx="256" cy="96" r="6" fill="#38bdf8"/>
+  <circle cx="200" cy="180" r="3.5" fill="#bae6fd"/>
+  <circle cx="312" cy="180" r="3.5" fill="#bae6fd"/>
+
+  <!-- Minimal typography at bottom -->
+  <text x="256" y="405" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', sans-serif" font-size="34" font-weight="900" letter-spacing="10" fill="#f8fafc" text-anchor="middle">WINTER ARC</text>
+  <text x="256" y="435" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', sans-serif" font-size="16" font-weight="600" letter-spacing="4" fill="#38bdf8" text-anchor="middle">2026</text>
+</svg>

@@ -1,0 +1,6 @@
+{
+  "name": "Winter Arc 2026",
+  "description": "A personal 92-day performance system running from October 1 to December 31, 2026. Discipline over motivation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
