@@ -9,8 +9,8 @@ You have two paths to run Winter Arc 2026 on your iPhone:
 Winter Arc 2026 is fully built as an **iPhone-first Progressive Web App** with offline caching, local data persistence, and iOS safe-area support.
 
 1. Open Safari on your iPhone.
-2. Navigate to your app URL:
-   `https://ais-dev-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app`
+2. Navigate to your public Shared App URL:
+   `https://ais-pre-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app`
 3. Tap the **Share** button (the square with an arrow pointing up at the bottom of Safari).
 4. Scroll down and tap **"Add to Home Screen"**.
 5. Tap **Add** in the top right.

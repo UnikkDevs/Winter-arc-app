@@ -487,12 +487,36 @@ export const SettingsScreen: React.FC<SettingsScreenProps> = ({
             </div>
 
             <div className="flex-1 overflow-y-auto py-4 space-y-4 text-xs text-neutral-300 no-scrollbar">
+              {/* Important 403 Notice & Public URL */}
+              <div className="p-3.5 rounded-2xl bg-amber-500/10 border border-amber-500/30 space-y-2">
+                <span className="font-bold text-amber-300 block">
+                  ⚠️ Safari 403 Error Fix
+                </span>
+                <p className="text-neutral-300 text-[11px] leading-relaxed">
+                  If Safari shows <strong>Error 403 (Forbidden)</strong>, you are accessing the private developer URL. Use the <strong>Public Shared App URL</strong> below:
+                </p>
+                <div className="p-2 rounded-xl bg-black/60 border border-neutral-800 text-[11px] font-mono text-sky-300 break-all select-all">
+                  https://ais-pre-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app
+                </div>
+                <button
+                  type="button"
+                  onClick={() => {
+                    navigator.clipboard.writeText('https://ais-pre-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app');
+                    setCopyCodeSuccess(true);
+                    setTimeout(() => setCopyCodeSuccess(false), 2000);
+                  }}
+                  className="w-full py-1.5 rounded-lg bg-sky-500/20 text-sky-300 text-[11px] font-bold uppercase transition hover:bg-sky-500/30 cursor-pointer"
+                >
+                  {copyCodeSuccess ? '✓ Copied Public URL' : 'Copy Safari Public URL'}
+                </button>
+              </div>
+
               <div className="p-3.5 rounded-2xl bg-neutral-950 border border-neutral-800 space-y-2">
                 <span className="font-bold text-white block">
                   Method 1: Instant PWA (No Mac Needed)
                 </span>
                 <p className="text-neutral-400 leading-relaxed">
-                  Open this app in iPhone Safari, tap <strong>Share</strong>, then <strong>&quot;Add to Home Screen&quot;</strong>. The app launches full-screen in standalone mode with full local persistence.
+                  Open the public URL in iPhone Safari, tap <strong>Share</strong>, then <strong>&quot;Add to Home Screen&quot;</strong>. The app launches full-screen in standalone mode with full local persistence.
                 </p>
               </div>
 

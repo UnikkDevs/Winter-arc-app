@@ -115,7 +115,7 @@ struct ContentView: View {
     @State private var webView = WKWebView()
 
     // Host URL of your deployed Winter Arc PWA or local bundle
-    let appURL = URL(string: "https://ais-dev-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app")!
+    let appURL = URL(string: "https://ais-pre-rsynf57mhsatt4s3zzvh5n-439442445610.asia-east1.run.app")!
 
     var body: some View {
         ZStack {
